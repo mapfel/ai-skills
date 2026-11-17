@@ -1,0 +1,15 @@
+
+{
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true
+  },
+  "[skill]": {
+    "editor.defaultFormatter": "darkriszty.markdown-table-prettify",
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true
+  },
+  "markdownTablePrettify.extendedLanguages": ["skill"],
+  "prettier.proseWrap": "never"
+}
