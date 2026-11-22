@@ -22,6 +22,7 @@ This repository follows a few guiding principles:
 | Skill                                                                        | Description                                                                                                 | Status |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|:------:|
 | [Conversation Knowledge Extractor](skills/conversation-knowledge-extractor/) | Extracts and consolidates valuable knowledge from AI conversations into structured, reusable documentation. |  WIP   |
+| [Foto-Negativsortierung](skills/foto-negativ-sortierung/) | Uses OCR and a local review UI to organize duplex photo scans by film negative number and identify missing negatives. | WIP |
 
 
 ### Conversation Knowledge Extractor
@@ -39,6 +40,12 @@ See the [skill documentation](skills/conversation-knowledge-extractor/README.md)
 for detailed usage instructions and examples.
 
 
+### Foto-Negativsortierung
+
+Organizes scanned photo triplets using the negative number printed on the back, with OCR validation, an offline browser review, safe renaming, separated originals, and placeholders for missing negatives.
+
+See the [skill documentation](skills/foto-negativ-sortierung/README.md) for usage and requirements.
+
 ## Repository Structure
 
 ```text
@@ -46,10 +53,14 @@ ai-skills/
 ├── README.md
 ├── LICENSE
 └── skills/
-    └── conversation-knowledge-extractor/
+    ├── conversation-knowledge-extractor/
+    │   ├── SKILL.md
+    │   ├── references/
+    │   └── assets/
+    └── foto-negativ-sortierung/
         ├── SKILL.md
-        ├── references/
-        └── assets/
+        ├── README.md
+        └── scripts/
 ```
 
 Each skill resides in its own directory and contains a `SKILL.md` file describing its purpose, usage conditions, instructions, and expected behavior.
